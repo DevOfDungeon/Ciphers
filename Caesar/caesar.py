@@ -13,7 +13,7 @@ def caesar(text, shift, encrypt=True):
     
     shifted_alphabet = alphabet[shift:] + alphabet[:shift]
     translation_table = str.maketrans(alphabet + alphabet.upper(), shifted_alphabet + shifted_alphabet.upper())
-    encrypted_text = text.translate(translation_table)
+    final_text = text.translate(translation_table)
     
-    return encrypted_text
+    return final_text
 
