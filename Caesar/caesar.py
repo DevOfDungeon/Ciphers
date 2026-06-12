@@ -15,3 +15,8 @@ def caesar(text, shift, encrypt=True):
     
     return final_text
 
+def encrypt(text, shift):
+    return caesar(text, shift)
+    
+def decrypt(text, shift):
+    return caesar(text, shift, encrypt=False)
