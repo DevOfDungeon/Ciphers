@@ -8,7 +8,12 @@ def caesar_cipher():
 
     if choice == "e":
         print("Encrypted:", encrypt(text, shift))
+        
     elif choice == "d":
         print("Decrypted:", decrypt(text, shift))
+        
     else:
         print("Invalid choice")
+
+if __name__ == "__main__":
+    caesar_cipher()
