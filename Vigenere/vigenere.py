@@ -23,3 +23,9 @@ def vigenere(text,key,direction=1):
             new_index= (index + direction * offset) % len(alphabet)
             final += alphabet[new_index]
     return final
+
+def encrypt(message, key):
+    return vigenere(message, key)
+    
+def decrypt(message, key):
+    return vigenere(message, key, -1)
